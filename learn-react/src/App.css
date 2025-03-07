@@ -17,6 +17,7 @@
   border: 1px solid gray;
   padding: 10px;
   width:100vh;
+  margin-bottom:20px;
 }
 .button{
   background-color: black;
@@ -37,6 +38,15 @@
   gap: 10px;
   border-radius: 20px;
   align-items: center;
+  color: #000;
+}
+.voterList input{
+  color: #000;
+  background: #fff;
+}
+.voterList input::placeholder{
+  color: #000;
+  background-color: #fff;
 }
 table {
   font-family: arial, sans-serif;
@@ -48,4 +58,19 @@ td, th {
   border: 1px solid #000;
   text-align: left;
   padding: 8px;
+}
+
+.loader{
+  background-color: #fff;
+ border-radius: 50%;
+ height: 50px;
+ width: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  color: #fff;
+  
+}
+.loader p{
+  color: #000;
 }
