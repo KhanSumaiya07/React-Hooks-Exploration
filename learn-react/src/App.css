@@ -1,13 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   /* max-width: 1280px; */
   /* margin: 0 auto; */
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
+button{
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .card {
-  padding: 2em;
+  /* padding: 2em; */
   width: 100%;
 }
 
@@ -28,6 +41,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+    padding: 30px;
 }
 
 .voterList{
@@ -37,9 +52,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   align-items: center;
   color: #000;
+  width: 60%;
 }
 .voterList input{
   color: #000;
@@ -120,13 +136,93 @@ td, th {
 .remove:hover{
   border: none;
 }
-
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 li{
   list-style: none;
 }
 .blog-wrapper{
-  width: 50%;
+  width: calc(100% / 4 - 10px);
     background: #fff;
     color: #000;
     padding: 10px;
+}
+.ldv-cont{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-shopping{
+  width: 100%;
+  display: flex;
+
+}
+.product-page{
+  width: 70%;
+}
+.cart-page{
+  width: 30%;
+  background: gray;
+  padding: 20px;
+}
+.wrapper-shopping h2{
+  margin:30px 0;
+}
+.product-wrapper{
+  height: 300px;
+  width: 200px;
+  background: #fff;
+  color: #000;
+  padding: 10px;
+}
+.product-wrapper .image-container{
+  width: 100%;
+  height: 60%;
+}
+.product-wrapper img,.cart-product-wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-wrapper h3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+button{
+  cursor: pointer;
+}
+.cart-product-wrapper{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+.cart-product-wrapper .image-container{
+  width: 40%;
+}
+
+.prod-info{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.prod-info h3 {
+  text-align: start;
+  font-size: 16px;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
 }
