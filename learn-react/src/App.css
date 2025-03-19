@@ -18,7 +18,29 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
+[data-theme="light"] {
+  --bg-color: white;
+  --text-color: black;
+}
 
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.inputBox {
+  cursor: pointer;
+} 
 .card {
   /* padding: 2em; */
   width: 100%;
